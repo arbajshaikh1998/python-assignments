@@ -1,0 +1,70 @@
+//program for finding the length of a string.
+          #include <stdio.h>
+
+          int main()
+          {
+            char s[30];
+            int c=0;
+            printf("Enter the string:\n");
+            gets(s);
+
+            for(int i=0;s[i]!='\0';i++){
+                c++;
+            }
+            printf("\n");
+            printf("The length of the given string is:%d",c);
+
+              return 0;
+          }
+//program for reverse the string.
+          #include <stdio.h>
+
+          int main()
+          {
+            char s[300];
+            int c=0;
+            printf("Enter the string:\n");
+            gets(s);
+
+            for(int i=0;s[i]!='\0';i++){
+                c++;
+            }
+            for(int j=c-1;j>=0;j--){
+                printf("%c",s[j]);
+            }
+            printf("\n");
+
+
+              return 0;
+          }
+      
+//program to check given string is pallindrome or not
+
+          #include <stdio.h>
+          #include <string.h>
+
+          int main(){
+              char s[200];
+              int i,l;
+              int temp = 0;
+
+              printf("Enter a string:");
+              scanf("%s", string1);
+
+              l = strlen(string1);
+
+              for(i=0;i < l ;i++){
+                  if(string1[i] != string1[l-i-1]){
+                      temp= 1;
+                      break;
+             }
+          }
+
+              if (temp) {
+                  printf("%s is not a palindrome", s);
+              }    
+              else {
+                  printf("%s is a palindrome", s);
+              }
+              return 0;
+          }
